@@ -1,7 +1,7 @@
 const { MongoClient } = require('mongodb');
 const express = require('express')
 const app = express()
-const port = 5000
+const port = process.env.PORT || 5000;
 // Connection URL
 const url = 'mongodb+srv://Kelvin:backend_007@cluster0.xllr0.mongodb.net/?retryWrites=true&w=majority';
 const client = new MongoClient(url);
